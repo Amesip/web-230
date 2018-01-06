@@ -1,4 +1,4 @@
-var header = require('Barrett-header.js');
+var header = require('../header.js');
 
 console.log("\nTesting the header.js file's output..."); 
 
