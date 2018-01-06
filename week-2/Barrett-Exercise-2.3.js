@@ -14,7 +14,7 @@ var header = require('../header.js');
 
 // function properties go here...
 
-var myNameMary = 'Mary Barrett';
+var myNameMary = "Mary Barrett";
 
 // function 
 function myName() {
@@ -25,6 +25,8 @@ function myName() {
 console.log(header.display('Mary', 'Barrett', 'Assignment 2.3'));
 console.log(myName);
 console.log('\n'); 
+
+// end program
 
 
 

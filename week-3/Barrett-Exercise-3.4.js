@@ -32,6 +32,8 @@ console.log(header.display('Mary', 'Barrett', 'Assignment 3.4'));
 
 console.log(" ");
 
+var arg1 = 2;
+
 function match(arg1, arg2) {
     if (arg1 == arg2){
         return true;
@@ -41,6 +43,8 @@ function match(arg1, arg2) {
     }
 }
 
+console.log("--DISPLAYING FOR LOOP--");
+
 function logMismatch(arg1, arg2) {
     console.log(arg1 + ' and ' + arg2 + ' do not match!');
 } 
@@ -48,3 +52,11 @@ function logMismatch(arg1, arg2) {
 function logMatch(arg1, arg2) {
     console.log(arg1 + ' and ' + arg2 + ' do match!');
 }
+
+
+// ** DO NOT MODIFY OR REMOVE THIS FUNCTION **
+function randomNumber() {
+    return Math.floor((Math.random() * 10) + 1); 
+}
+
+// end program
