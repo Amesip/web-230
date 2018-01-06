@@ -18,7 +18,9 @@ var header = require('../header.js');
 
 console.log(header.display('Mary', 'Barrett', 'Assignment 3.3'));
 
-var eventKeyCode = 16;
+console.log(" ");
+
+var eventKeyCode = 13;
 
 switch(eventKeyCode) {
     case 13:               //Start here if eventKeyCode === 13

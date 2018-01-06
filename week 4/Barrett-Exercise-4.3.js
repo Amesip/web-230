@@ -26,6 +26,14 @@ var header = require('../header.js');
 
 
 // function
+function getArray(arr) {
+    var x=0;
+    while (x<arr.length){
+        console.log(arr[x]);
+        x++
+    }
+}
+
 function getValue(arr, val) {
     var x=0;
     while (x<arr.length){
@@ -43,7 +51,15 @@ console.log(header.display('Mary', 'Barrett', 'Assignment 4.3'));
 
 console.log(" ");
 
+console.log("--DISPLAYING ARRAY ITEMS--");
+
 var vehicles = ["car", "truck", "motorcycle", "airplane", "bus"];
+
+getArray(vehicles);
+
+console.log(" ");
+
+console.log("--SELECTED VALUE--");
 
 getValue(vehicles, "motorcycle");
 
