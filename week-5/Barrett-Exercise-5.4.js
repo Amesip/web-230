@@ -42,6 +42,8 @@ Expected output:
 
 // start program
 
+console.log(header.display('Mary', 'Barrett', 'Assignment 5.4'));
+
 //Reuse the Array-Like Object collection created in Exercise 5.3 (famousComposers)
 
 var famousComposers = [

@@ -18,6 +18,8 @@ var header = require('../header.js');
 
 // start program
 
+console.log(header.display('Mary', 'Barrett', 'Assignment 5.3'));
+
 //Create an Array-Like Object of 5 famous composers
 
 var composers = [

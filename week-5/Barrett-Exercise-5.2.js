@@ -17,6 +17,8 @@ var header = require('../header.js');
 
 // start program
 
+console.log(header.display('Mary', 'Barrett', 'Assignment 5.2'));
+
 //Create a one dimensional array with 5 elements of your favorite food types
 
 var foods = ["Brownies", "Cake", "Ice-Cream", "Candy", "Pie"];

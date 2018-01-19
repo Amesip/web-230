@@ -32,9 +32,9 @@ console.log(header.display('Mary', 'Barrett', 'Assignment 3.4'));
 
 console.log(" ");
 
-var arg1 = 2;
+var arg1 = 2; //Create a test variableand assign it some numerical value between 1 and 10
 
-function match(arg1, arg2) {
+function match(arg1, arg2) { //Use the match function, to determine if the test variable matches the generated number
     if (arg1 == arg2){
         return true;
     } 
@@ -43,7 +43,7 @@ function match(arg1, arg2) {
     }
 }
 
-console.log("--DISPLAYING FOR LOOP--");
+//Use the logMatch and logMismatch functions to output the results
 
 function logMismatch(arg1, arg2) {
     console.log(arg1 + ' and ' + arg2 + ' do not match!');
@@ -52,8 +52,35 @@ function logMismatch(arg1, arg2) {
 function logMatch(arg1, arg2) {
     console.log(arg1 + ' and ' + arg2 + ' do match!');
 }
+//Create a for loop to generate and test 10 random numbers
 
+console.log("--Displaying for loop --")
+for (i=0; i<=10; i++) {
+    var rand = randomNumber()
+    if (arg1 == rand){
+        logMatch(arg1, rand)
+    }
+    else
+    {
+        logMismatch(arg1, rand)
+    }
+}
+//Create a while loop to generate and test 10 random numbers
+console.log("--Displaying while loop --")
+i=0
+while (i<10) {
+    var rand = randomNumber()
+    if (arg1 == rand){
+        logMatch(arg1, rand)
+    }
+    else
+    {
+        logMismatch(arg1, rand)
+    }
+    i++
+}
 
+//Use the provided helper function, randomNumber, to generate a new random number between 1 and 10
 // ** DO NOT MODIFY OR REMOVE THIS FUNCTION **
 function randomNumber() {
     return Math.floor((Math.random() * 10) + 1); 
