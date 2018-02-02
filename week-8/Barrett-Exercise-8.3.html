@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 8.3</title>
+		<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+		<link rel="stylesheet" href="../site.css">
+	</head>
+	<body>
+		<h2>Toggle Example</h2>
+		<p id="content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius at arcu eget tincidunt. Donec vitae efficitur lacus. Proin ultrices nulla ac tempus vehicula. 
+			Suspendisse et mattis leo, vel ultrices mauris. Nulla sagittis, felis ut vehicula ullamcorper, diam purus euismod justo, eget commodo lacus eros sed odio. Fusce tristique 
+			lectus a fringilla convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ut massa lorem. Aliquam ipsum orci, 
+			tincidunt suscipit dignissim a, tincidunt sed ante. Curabitur sed felis felis. Vivamus ornare, orci ut varius vehicula, urna velit posuere velit, ut convallis tortor 
+			ligula at sapien. Sed ligula nisl, scelerisque vitae metus eget, vestibulum rhoncus nunc.
+		</p>
+		<p id="toggled-content">
+			Vivamus eleifend nisi ut ex aliquam, quis molestie velit imperdiet. Fusce placerat ligula ac cursus pretium. Etiam eget malesuada mauris, eget efficitur odio. Praesent 
+			vehicula et massa a semper. Mauris et aliquam ligula. Nulla facilisi. Suspendisse potenti. Nulla tristique metus urna, vitae vestibulum ante iaculis eu. Sed laoreet mollis 
+			sem in laoreet. Duis purus purus, lobortis id tortor ac, tincidunt interdum nisi. Ut volutpat justo nec urna porta, id consequat arcu tincidunt. Integer tincidunt gravida 
+			bibendum. Morbi tempor ligula non erat maximus, in convallis lorem euismod. Mauris eu justo a ipsum gravida congue. Class aptent taciti sociosqu ad litora torquent per conubia 
+			nostra, per inceptos himenaeos. Mauris blandit efficitur rutrum.
+		</p>
+		<button id="toggle">Toggle Content</button>
+
+		<script>
+			//Using the jQuery "click" and "toggle" functions, register a click event for the "toggle" button and assign the toggle function to the $("#toggled-content) div. 
+			$(function() {
+			$(toggle).click(function() {
+				$("#toggled-content").toggle()
+			});
+			});
+			</script>
+		<h2>Table Selector Example</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Type</th>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+					<td>
+					<a class="fruitId" href=’#’>1</a>
+					</td>
+					<td>Oranges</td>
+				</tr>
+				<tr>
+					<td>
+					<a class="fruitId" href=’#’>2</a>
+					</td>
+					<td>Apples</td>
+				</tr>
+				<tr>
+					<td>
+					<a class="fruitId" href=’#’>3</a>
+					</td>
+					<td>Pears</td>
+				</tr>
+				<tr>
+					<td>
+					<a class="fruitId" href=’#’>4</a>
+					</td>
+					<td>Limes</td>
+				</tr>
+				<tr>
+					<td>
+					<a class="fruitId" href=’#’>5</a>
+					</td>
+					<td>Lemons</td>
+				</tr>
+			</thead>
+		</table>
+
+			<script>
+				//Using the jQuery "click" function, register a click event for the fruitId class and output the fruitId and fruitType using JavaScript alert boxes   
+			$(function() {
+				$(".fruitId").click(function(event) {
+					event.preventDefault();
+					var fruitId = $(this).text();
+					var fruitType = $(this).closest("td").next().text();
+					alert("{fruit_id: " + fruitId + ", fruitType: " + fruitType + "}");
+				});
+			});
+			</script>
+
+	</body>
+</html>
